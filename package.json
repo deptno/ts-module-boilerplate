@@ -2,6 +2,7 @@
   "name": "MUST change, name & repository. DELETE CHANGELOG.MD",
   "version": "0.0.1",
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "repository": "https://github.com/deptno/ts-module-boilerplate.git",
   "author": "bglee <deptno@gmail.com>",
   "license": "MIT",
@@ -9,6 +10,6 @@
     "typescript": "^2.3.4"
   },
   "scripts": {
-    "prepublish": "tsc --outDir dist"
+    "prepublish": "tsc --outDir dist --declaration"
   }
 }
