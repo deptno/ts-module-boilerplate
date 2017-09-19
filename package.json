@@ -9,11 +9,16 @@
   "license": "MIT",
   "devDependencies": {
     "@types/jest": "^20.0.8",
+    "@types/webpack": "^3.0.10",
     "jest": "^21.1.0",
-    "typescript": "^2.5.2"
+    "ts-loader": "^2.3.7",
+    "typescript": "^2.5.2",
+    "webpack": "^3.6.0",
+    "webpack-node-externals": "^1.6.0"
   },
   "scripts": {
     "prepublish": "tsc --outDir dist --declaration",
+    "build": "webpack",
     "test": "jest"
   },
   "jest": {
